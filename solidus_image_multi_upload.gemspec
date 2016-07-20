@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "solidus_image_multi_upload"
   spec.version       = SolidusImageMultiUpload::VERSION
   spec.authors       = ["Alex Myers"]
-  spec.email         = ["alex.myers@enspiresoftware.com"]
+  spec.email         = ["dev.alex.myers@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Advanced Product Images Uploader}
+  spec.description   = %q{Allow Solidus to upload multiple product images at the same time.}
+  spec.homepage      = "https://github.com/ajmyers01/solidus_image_multi_upload"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -26,6 +26,10 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  solidus_version = [">= 1.0.6", "< 2"]
+
+  s.add_dependency "solidus_core", solidus_version
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
