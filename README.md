@@ -7,7 +7,7 @@ Allow Solidus to upload multiple product images at the same time.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'solidus_image_multi_upload', :git => 'git@github.com:ajmyers01/solidus_image_multi_upload.git'
+gem 'solidus_image_multi_upload', :git => 'https://github.com/ajmyers01/solidus_image_multi_upload.git'
 ```
 
 And then execute:
