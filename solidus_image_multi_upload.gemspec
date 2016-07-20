@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
 
   solidus_version = [">= 1.0.6", "< 2"]
 
-  s.add_dependency "solidus_core", solidus_version
+  spec.add_dependency "solidus_core", solidus_version
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
